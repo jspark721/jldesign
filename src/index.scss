@@ -1,0 +1,102 @@
+$primary: #D6AEAD;
+$light: #E4C2C1;
+$white: #FFFFFF;
+$gray: #7C7C7C;
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,900|Playfair+Display');
+
+$serif: 'Playfair Display', serif;
+$sans: 'Raleway', sans-serif;
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: $sans;
+  background: url('https://images.unsplash.com/photo-1531026293147-957992e93db6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2156f8d9db870e6b4fa892387ba3b9a3&auto=format&fit=crop&w=1500&q=80');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  font-family: $serif;
+  color: $gray;
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+
+.container {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+}
+
+
+.title {
+  margin-top: -20px;
+  font-size: 2.5em;
+  span {
+    background-color: rgba($white, .7);
+  }
+}
+
+.name {
+  margin-top: 130px;
+  text-transform: uppercase;
+  font-family: $serif;
+  font-weight: 800;
+  font-size: 1.2em;
+  letter-spacing: 3px;
+  color: $white;
+  span {
+    background-color: rgba($light, .5);
+    padding: 0 7px;
+  }
+}
+
+.subtitle {
+  margin-top: -20px;
+  font-style: italic;
+  font-family: $serif;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: darken($gray, 10%);
+  span {
+    background: rgba($light, .8);
+  }
+}
+
+.coming-soon {
+  margin-top: 120px;
+  margin-bottom: 20px;
+  color: $white;
+  letter-spacing: 2px;
+  font-size: 3em;
+  font-weight: 900;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  span {
+    background: rgba($gray, .7);
+  }
+}
+
+button {
+  border: 0;
+  letter-spacing: 2px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba($gray, .5);
+  text-transform: uppercase;
+  background: $light;
+  color: darken($gray, 10%);
+  margin-right: 20px;
+  &:hover {
+    transition: all .5s ease;
+    background: $white;
+  }
+}
+
+a {
+  color: darken($gray, 10%);
+  text-decoration: none;
+}
